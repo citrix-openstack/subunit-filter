@@ -29,10 +29,10 @@ class FilterStreamer(subunit.StreamResultToBytes):
         self.logfile.write(status + test_id + '\n')
 
     def log_exclusion(self, test_id):
-        self._log('EXCLUDED', test_id)
+        self._log('EXCLUDED ', test_id)
 
     def log_inclusion(self, test_id):
-        self._log('INCLUDED', test_id)
+        self._log('INCLUDED ', test_id)
 
 
 def load_id_list(path):
@@ -68,8 +68,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
 
